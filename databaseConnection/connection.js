@@ -9,18 +9,23 @@ const knex = require('knex')({
     }
 });
 knex.schema
-.createTable('user_details', function(table) {
-    table.integer('id')
-    table.string('username'),
-    table.string('password')
-    table.string('user_location')
-})
-.
-.then(() => {
-    console.log('Table created')
-}).catch((err) => {
-    console.log(err)
-});
+// .createTable('user_details', function(table) {
+//     table.integer('id')
+//     table.string('username'),
+//     table.string('password')
+//     table.string('user_location')
+// })
+// .createTable('resturants', function(table) {
+//     table.integer('id'),
+//     table.string('resturant_name'),
+//     table.string('Dishes'),
+//     table.string('price')
+// })
+// .then(() => {
+//     console.log('Table created')
+// }).catch((err) => {
+//     console.log(err)
+// });
 
 module.exports = knex
 
