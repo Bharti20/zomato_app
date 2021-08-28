@@ -1,4 +1,5 @@
-console.log('🍟🍕 🍚🍨🍥🥞🥓   Welcome to Tomato App   🫕🥘🍝🍩🍭🍦')
+console.log()
+console.log('🍟🍕 🍚🍨🍥🥞🥓 Welcome to Zomato App  🫕🥘🍝🍩🍭🍦')
 const express = require('express')
 const app = express()
 const callApis = require('./routes/index')
@@ -8,5 +9,5 @@ app.use('/', callApis)
 
 app.listen(7000, (err) => {
     if(err) throw err;
-    console.log('Server is running----')
+    console.log()
 });
