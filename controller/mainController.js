@@ -17,7 +17,6 @@ const addLocation = (req, res) => {
     .then(() => {
         res.send('user location added 📍📍📍')
         console.log("Your Location added", location)
-        console.lo()
     }).catch((err) => {
         res.send(err)
     });
